@@ -9,8 +9,8 @@ import { setUser } from '../../src/features/slices/auth';
 
 export const LoginPage = () => {
   const [form, setForm] = useState({
-    email: 'hsnlbnan@gmail.com',
-    password: '2124785'
+    email: '',
+    password: ''
   });
 
   const handleOnChange = (e) => {
