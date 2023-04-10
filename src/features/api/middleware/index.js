@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { setAccessToken, setLogoutState } from '../../../features/slices/auth';
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: `http://localhost:8080/api/v1/`,
+  baseUrl: `https://dershane-backend.vercel.app/api/v1/`,
   prepareHeaders: (headers, { getState }) => {
     const accessToken = getState().authslice.access_token;
 
